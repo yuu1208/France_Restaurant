@@ -5,19 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>France Restaurant・La baie</title>
+    <title>France Restaurant / La Baie</title>
     <script>
         window.addEventListener('DOMContentLoaded', function(){
+            var h = document.getElementById('nav');
             window.addEventListener('scroll', function(){
-                const h = document.getElementById('nav');
-                //console.log("画面:" + window.innerHeight + " スクロール位置:" + window.scrollY);
                 if(window.scrollY >= innerHeight-98) {
-                    h.style.bottom = "inherit";
-                    h.style.position = "fixed";
+                    if(window.innerWidth >= 1170) {
+                        h.style.bottom = "inherit";
+                        h.style.position = "fixed";
+                    }
+                    else {
+                        return;
+                    }
+                    
                 }
+                
                 else {
-                    h.style.bottom = "0";
-                    h.style.position = "absolute";
+                    if(window.innerWidth <= 1170) {
+                        h.style.bottom = "0";
+                        h.style.position = "fixed";
+                    }
+                    else {
+                        h.style.bottom = "0";
+                        h.style.position = "absolute";
+                    }
                 }
             });
         });
