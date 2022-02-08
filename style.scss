@@ -1,13 +1,26 @@
 @charset "UTF-8";
 
+//初期位置設定
+$gradient: "linear-gradient(to left #d104e2, #3806bf)";
+$blur: "blur(10px)";
+
 html,body {
     width: 100%;
     margin: 0;
+    background-color: black;
     font-family: serif;
 }
+
 div#container {
     width: 100%;
     height: auto;
     z-index: 1;
     position: absolute;
+}
+
+div#firstview {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    position: relative;
 }
