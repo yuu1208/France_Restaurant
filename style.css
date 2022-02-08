@@ -4,6 +4,7 @@ html, body {
   background-color: black;
   font-family: serif;
   color: white;
+  scroll-behavior: smooth;
 }
 
 div#container {
@@ -35,6 +36,10 @@ div#first_logo h3 {
   padding: 0;
   line-height: 2;
   letter-spacing: 4px;
+}
+
+div#contents {
+  margin-top: 200px;
 }
 
 div.wrap {
@@ -106,6 +111,26 @@ div#nav p {
     display: block;
     width: 80%;
     margin: 0 auto;
+  }
+}
+
+div#secoundView {
+  border-left: 2px solid white;
+  padding-left: 30px;
+  margin-left: 300px;
+  letter-spacing: 2px;
+}
+
+p#dish_img img {
+  width: inherit;
+}
+
+@media screen and (max-width: 1170px) {
+  div#secoundView {
+    margin-left: 0px;
+  }
+  p#dish_img img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -10,6 +10,7 @@ html,body {
     background-color: black;
     font-family: serif;
     color: white;
+    scroll-behavior: smooth;
 }
 
 div#container {
@@ -42,6 +43,9 @@ div#first_logo {
     }
 }
 
+div#contents {
+    margin-top: 200px;
+}
 div.wrap {
     width: 1674px;
     height: 30000px;
@@ -104,5 +108,23 @@ div#nav {
         width: 80%;
         margin: 0 auto;
         
+    }
+}
+
+div#secoundView {
+    border-left: 2px solid white;
+    padding-left: 30px;
+    margin-left: 300px;
+    letter-spacing: 2px;
+}
+p#dish_img img {
+    width: inherit;
+}
+@media screen and (max-width: 1170px) {
+    div#secoundView {
+        margin-left: 0px;
+    }
+    p#dish_img img {
+        width: 100%;
     }
 }
