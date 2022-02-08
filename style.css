@@ -2,7 +2,7 @@ html, body {
   width: 100%;
   margin: 0;
   background-color: black;
-  font-family: serif;
+  font-family: 'YuMincho','Yu Mincho',serif;
   color: white;
   scroll-behavior: smooth;
 }
@@ -34,7 +34,7 @@ div#first_logo {
 
 div#first_logo h3 {
   padding: 0;
-  line-height: 2;
+  font-weight: normal;
   letter-spacing: 4px;
 }
 
@@ -43,23 +43,26 @@ div#contents {
 }
 
 div.wrap {
-  width: 1674px;
+  width: 80%;
   height: 30000px;
   z-index: 2;
   margin: 0 auto;
   position: relative;
 }
 
-@media screen and (max-width: 1800px) {
-  div.wrap {
-    width: 1400px;
-  }
-}
-
 @media screen and (max-width: 1370px) {
   div.wrap {
     width: 90%;
   }
+}
+
+h2 {
+  font-size: 30px;
+  letter-spacing: 10px;
+}
+
+p {
+  letter-spacing: 4px;
 }
 
 div#nav {
@@ -117,20 +120,115 @@ div#nav p {
 div#secoundView {
   border-left: 2px solid white;
   padding-left: 30px;
-  margin-left: 300px;
-  letter-spacing: 2px;
+  margin-top: 50px;
+}
+
+div#secoundView h2 + p {
+  margin-top: 50px;
 }
 
 p#dish_img img {
-  width: inherit;
+  width: 100%;
+}
+
+p.article_title {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 6px;
+  margin: 200px 0px;
+  background-image: url("images/article_title.png");
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position-x: 50%;
+  height: 80px;
+  text-align: center;
+}
+
+p#yokohama_img {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+
+p#yokohama_img img {
+  width: 1000px;
+}
+
+div#yokohama {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  margin-top: 140px;
+}
+
+div#yokohama h2 + p {
+  margin-top: 100px;
 }
 
 @media screen and (max-width: 1170px) {
-  div#secoundView {
-    margin-left: 0px;
-  }
-  p#dish_img img {
+  p#yokohama_img img {
     width: 100%;
+  }
+}
+
+p#building_img {
+  margin-top: 700px;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+}
+
+div#glass_transparent {
+  margin-top: 900px;
+  width: 700px;
+  position: absolute;
+  padding: 40px;
+  -webkit-backdrop-filter: blur(19px);
+          backdrop-filter: blur(19px);
+  border: 4px solid white;
+  right: 0;
+  z-index: 2;
+}
+
+div#glass_transparent h2 + p {
+  margin-top: 100px;
+}
+
+p#building_img img {
+  width: 1000px;
+}
+
+@media screen and (max-width: 1170px) {
+  p#building_img img {
+    width: 100%;
+  }
+  div#glass_transparent {
+    width: 90%;
+    padding: 0% 5%;
+    border: 0;
+  }
+}
+
+p.small {
+  margin-top: 70px;
+  font-size: 12px;
+}
+
+div#article {
+  width: 100%;
+  height: auto;
+  z-index: 3;
+}
+
+div#mobile {
+  height: 1450px;
+}
+
+@media screen and (max-width: 1170px) {
+  div#mobile {
+    height: 1400px;
   }
 }
 /*# sourceMappingURL=style.css.map */
