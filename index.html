@@ -4,26 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>France Restaurant・La baie</title>
+    <script>
+        window.addEventListener('DOMContentLoaded', function(){
+            window.addEventListener('scroll', function(){
+                const h = document.getElementById('nav');
+                //console.log("画面:" + window.innerHeight + " スクロール位置:" + window.scrollY);
+                if(window.scrollY >= innerHeight-98) {
+                    h.style.bottom = "inherit";
+                    h.style.position = "fixed";
+                }
+                else {
+                    h.style.bottom = "0";
+                    h.style.position = "absolute";
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <div id="container">
         
         <!-- ファーストビュー（写真、ロゴ、ナビゲーション） -->
-        <div class="firstview">
-            <div class="first_logo"><img src="images/logo.svg" alt="Grande Maison La Baie"></div>
-            <p>普通のフランス料理とはちょっと違う、</p>
-            <p>美しい料理をお愉しみください。</p>
+        <div id="firstview">
+            <div id="first_logo">
+                <img src="images/logo.svg" alt="Grande Maison La Baie">
+                <h3><br>普通のフランス料理とはちょっと違う、<br>
+                より美しい料理を、当店でお愉しみください。</h3>
+            </div>
             
-            <ul>
-                <li><a href="#">建物について</a></li>
-                <li><a href="#">様々なご利用方法</a></li>
-                <li><a href="#">メニュー</a></li>
-                <li><a href="#">ウェディング</a></li>
-                <li><a href="#">店舗案内</a></li>
-            </ul>
+            
+            <div id="nav">
+                <ul>
+                    <li><a href="#"><p>建物について</p></a></li>
+                    <li><a href="#"><p>様々なご利用方法</p></a></li>
+                    <li><a href="#"><p>メニュー</p></a></li>
+                    <li><a href="#"><p>ウェディング</p></a></li>
+                    <li><a href="#"><p>店舗案内</p></a></li>
+                </ul>
+            </div>
         </div>
-        
+
+        <div class="wrap">
+
+        </div>
+
     </div>
 </body>
 </html>

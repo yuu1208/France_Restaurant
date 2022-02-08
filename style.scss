@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-//初期位置設定
-$gradient: "linear-gradient(to left #d104e2, #3806bf)";
+//初期設定
+$gradient: "to left #d104e2, #3806bf";
 $blur: "blur(10px)";
 
 html,body {
@@ -9,6 +9,7 @@ html,body {
     margin: 0;
     background-color: black;
     font-family: serif;
+    color: white;
 }
 
 div#container {
@@ -22,5 +23,76 @@ div#firstview {
     width: 100%;
     height: 100vh;
     text-align: center;
+    background-image: url('images/back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
+}
+
+div#first_logo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    h3 {
+        padding: 0;
+        line-height: 2;
+        letter-spacing: 4px;
+    }
+}
+
+div.wrap {
+    width: 1674px;
+    height: 30000px;
+    z-index: 2;
+    margin: 0 auto;
+    position: relative;
+}
+@media screen and (max-width: 1800px) {
+    div.wrap {
+        width: 1400px;
+    }
+}
+@media screen and (max-width: 1370px) {
+    div.wrap {
+        width: 90%;
+    }
+}
+
+div#nav {
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 9999999;
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    ul li {
+        display: inline-block;
+        width: 200px;
+        border-bottom: 2px solid rgba(255,255,255, 0.2);
+        transition: all 0.4s ease;
+    }
+    ul li:hover {
+        border-bottom: 2px solid rgba(255,255,255, 0.8);
+    }
+    ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    ul li+ li {
+        margin-left: 30px;
+    }
+    p {
+        font-size: 16px;
+    }
 }
