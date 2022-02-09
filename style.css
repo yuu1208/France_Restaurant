@@ -245,6 +245,12 @@ div#howto_panel {
           justify-content: center;
 }
 
+@media screen and (max-width: 1170px) {
+  div#howto_panel {
+    width: 100%;
+  }
+}
+
 div.panel {
   width: 300px;
   height: 300px;
@@ -273,6 +279,8 @@ div.panel_inner {
 
 div.panel_inner:hover {
   background-color: rgba(0, 0, 0, 0.6);
+  outline: 6px solid white;
+  outline-offset: -6px;
   color: white;
 }
 /*# sourceMappingURL=style.css.map */

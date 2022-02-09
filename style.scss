@@ -224,6 +224,12 @@ div#howto_panel {
     flex-wrap: wrap;
     justify-content: center;
 }
+@media screen and (max-width: 1170px) {
+    div#howto_panel {
+        width: 100%;
+    }
+}
+
 div.panel {
     width: 300px;
     height: 300px;
@@ -247,6 +253,9 @@ div.panel_inner {
     color: rgba(255,255,255, 0.0);
 }
 div.panel_inner:hover {
+    //borderだとはみ出すからoutlineした後に線が増えた肉を引く
     background-color: rgba(0,0,0, 0.6);
+    outline: 6px solid white;
+    outline-offset: -6px;
     color: rgba(255,255,255, 1);
 }
