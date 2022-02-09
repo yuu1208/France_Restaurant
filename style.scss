@@ -347,3 +347,21 @@ div#access {
         right: 0;
     }
 }
+
+ul#blog {
+    padding: 24px 0px 5px 0px;
+    margin: 0;
+    background-image: url('images/blog_back.png');
+    text-align: center;
+    li {
+        display: inline-block;
+    }
+}
+.blog_title {
+    border-bottom: 1px solid white;
+    padding-bottom: 30px;
+}
+.blog_article {
+    width: 300px;
+    padding-left: 20px;
+}
