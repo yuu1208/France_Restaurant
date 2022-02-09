@@ -65,6 +65,10 @@ p {
   letter-spacing: 4px;
 }
 
+a {
+  color: white;
+}
+
 div#nav {
   top: auto;
   bottom: 0;
@@ -160,7 +164,7 @@ div#yokohama {
   position: absolute;
   left: 0;
   z-index: 2;
-  margin-top: 140px;
+  margin-top: 142px;
 }
 
 div#yokohama h2 + p {
@@ -282,5 +286,61 @@ div.panel_inner:hover {
   outline: 6px solid white;
   outline-offset: -6px;
   color: white;
+}
+
+div#grid_oya {
+  display: -ms-grid;
+  display: grid;
+  margin: 50px 0px;
+  -ms-grid-columns: 180px 180px 180px 180px 180px 180px 180px;
+      grid-template-columns: 180px 180px 180px 180px 180px 180px 180px;
+  -ms-grid-rows: 180px 180px;
+      grid-template-rows: 180px 180px;
+  row-gap: 10px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div#grid_oya img {
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+div#shop_detail {
+  position: absolute;
+  left: 0;
+}
+
+iframe {
+  position: absolute;
+  right: 0;
+}
+
+div#access {
+  width: 1200px;
+  height: 580px;
+  position: relative;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1170px) {
+  div#access {
+    width: 100%;
+    text-align: center;
+    height: auto;
+  }
+  div#shop_detail {
+    position: relative;
+  }
+  iframe {
+    position: relative;
+    right: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

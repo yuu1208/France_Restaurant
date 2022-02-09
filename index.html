@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>France Restaurant / La Baie</title>
+    <title>La Baie ~ restaurant français ~</title>
     <script src="main.js" type="text/javascript"></script>
 </head>
 <body>
@@ -25,7 +25,7 @@
                     <li><a href="#howto"><p>様々なご利用方法</p></a></li>
                     <li><a href="#menu"><p>メニュー</p></a></li>
                     <li><a href="#wedding"><p>ウェディング</p></a></li>
-                    <li><a href="#access"><p>店舗案内</p></a></li>
+                    <li><a href="#store_detail"><p>店舗案内</p></a></li>
                 </ul>
             </div>
         </div>
@@ -75,6 +75,7 @@
             <a name="howto"></a>
             <p class="article_title">様々なご利用方法</p>
 
+            <!-- flex使用箇所 -->
             <div id="howto_panel">
                 <div class="panel" style="background: url(images/business.png);">
                     <div class="panel_inner">
@@ -122,21 +123,49 @@
             </div>
 
             <a name="menu"></a>
+
+            <!-- grid使用場所 -->
             <p class="article_title">メニュー</p>
-            <p>ランチ・ディナー・軽食等、多数ご用意してございます。</p>
-            <p>アナタのお気に入りの一品を、是非見つけてください。</p>
+            <div id="grid_oya">
+                <img src="images/menu_1.png" alt="menu">
+                <img src="images/menu_2.png" alt="menu">
+                <img src="images/menu_3.png" alt="menu">
+                <img src="images/menu_4.png" alt="menu">
+                <img src="images/menu_5.png" alt="menu">
+                <img src="images/menu_6.png" alt="menu">
+                <img src="images/menu_7.png" alt="menu">
+                <img src="images/menu_8.png" alt="menu">
+                <img src="images/menu_9.png" alt="menu">
+                <img src="images/menu_10.png" alt="menu">
+                <img src="images/menu_11.png" alt="menu">
+                <img src="images/menu_12.png" alt="menu">
+                <img src="images/menu_13.png" alt="menu">
+                <img src="images/menu_14.png" alt="menu">
+            </div>
 
             <a name="wedding"></a>
             <p class="article_title">ウェディング</p>
+            <h2>La Baie ✕ ウェディング</h2>
+            <p>La Baieでは、検討される方々一人一人にあった結婚式をプランニングし、ご満足の行くような品質・お値段で、他にはない素敵な結婚式をご提供します。</p>
+            <p>写真撮影や特注ケーキはもちろんのこと、あなたの思い描くような結婚式を、私達と一緒に挙げましょう。</p>
 
-            <a name="access"></a>
+            <a name="store_detail"></a>
             <p class="article_title">店舗案内</p>
 
-            <p><img src="images/logo.svg" alt="LOGO"></p>
-            <p>〒160-0023 東京都新宿区西新宿1-7-3</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.4074710667937!2d139.69477201547704!3d35.69158923701094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd69795476d%3A0x77ebfd23f17339d!2z44CSMTYwLTAwMjMg5p2x5Lqs6YO95paw5a6_5Yy66KW_5paw5a6_77yR5LiB55uu77yX4oiS77yT!5e0!3m2!1sja!2sjp!4v1644369952297!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-            <p class="small">MD31 Grid Layout / IW13A175-18 / &copy; Yuta Nakane.</p>
+            <div id="access">
+                <div id="shop_detail">
+                    <p><img src="images/logo.svg" alt="LOGO"></p>
+                    <p style="margin-top: 100px">ランチ：11:30~14:30 ディナー：17:30~21:00</p>
+                    <p>月曜定休（月曜が祝日の場合は火曜）</p>
+                    <p>〒160-0023 神奈川県横浜市西区みなとみらいXX-X</p>
+                    <p>駐車場10台あり・地下鉄○○線○○駅徒歩X分</p>
+                    <p>☎ 078-262-6650 / la_baie@example.com</p>
+                    <p style="margin-top: 100px"><a href="#">ご予約はこちらから承っております。</a></p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.4074710667937!2d139.69477201547704!3d35.69158923701094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd69795476d%3A0x77ebfd23f17339d!2z44CSMTYwLTAwMjMg5p2x5Lqs6YO95paw5a6_5Yy66KW_5paw5a6_77yR5LiB55uu77yX4oiS77yT!5e0!3m2!1sja!2sjp!4v1644369952297!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    
+            </div>
+            <p class="small center">MD31 Grid Layout / IW13A175-18 / &copy; Yuta Nakane.</p>
         </div>
 
     </div>
