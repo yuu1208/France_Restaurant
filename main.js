@@ -1,5 +1,6 @@
 window.addEventListener('DOMContentLoaded', function(){
     var h = document.getElementById('nav');
+
     window.addEventListener('scroll', function(){
         if(window.scrollY >= innerHeight-98) {
             if(window.innerWidth >= 1170) {
@@ -12,6 +13,7 @@ window.addEventListener('DOMContentLoaded', function(){
         }
         
         else {
+            
             if(window.innerWidth <= 1170) {
                 h.style.bottom = "0";
                 h.style.position = "fixed";
@@ -21,5 +23,9 @@ window.addEventListener('DOMContentLoaded', function(){
                 h.style.position = "absolute";
             }
         }
+
+        
+        
     });
+
 });
